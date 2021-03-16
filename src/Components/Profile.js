@@ -20,7 +20,7 @@ class Profile extends React.Component {
   componentWillMount() {
     console.log("Component Will Mount()");
   }
-  
+
   componentDidMount() {
     console.log("Component did Mount()");
 
@@ -39,9 +39,19 @@ class Profile extends React.Component {
 
   render() {
     console.log("Render()");
+
+    const TIME = () => {
+      var ss = this.state.timer % 60;
+      var mn = Math.floor((this.state.timer / 60) % 60);
+      var hh = Math.floor(this.state.timer / (60 * 60));
+      return `${hh} H: ${mn} M: ${ss} S`;
+    };
+
     return (
       <div>
-        <h3>{this.state.timer}</h3>
+        <h3>
+          <TIME />
+        </h3>
         <Name fullName={state.Name} />
         <ProfPhoto photo={state.Photo} />
         <Profession profession={state.Prof} />
