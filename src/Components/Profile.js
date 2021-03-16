@@ -16,6 +16,11 @@ class Profile extends React.Component {
   state = {
     timer: 0,
   };
+
+  componentWillMount() {
+    console.log("Component Will Mount()");
+  }
+  
   componentDidMount() {
     console.log("Component did Mount()");
 
