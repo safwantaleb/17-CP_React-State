@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import ProfPhoto from "./imgSrc";
 import Name from "./fullName";
 import Bio from "./bio";
@@ -12,7 +12,7 @@ const state = {
   Photo: { ProfPhoto },
 };
 
-class Profile extends React.Component {
+class Profile extends Component {
   state = {
     timer: 0,
   };

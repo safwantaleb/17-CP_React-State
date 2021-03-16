@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   font-family: sans-serif;
-
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -9,6 +8,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
+
 .on-off-btn {
   padding: 10px 15px;
   background-color: rgb(13, 137, 238);
