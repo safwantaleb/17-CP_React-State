@@ -44,7 +44,7 @@ class Profile extends Component {
       var ss = this.state.timer % 60;
       var mn = Math.floor((this.state.timer / 60) % 60);
       var hh = Math.floor(this.state.timer / (60 * 60));
-      return `${hh} H: ${mn} M: ${ss} S`;
+      return `${hh} H : ${mn} M : ${ss} S`;
     };
 
     return (
